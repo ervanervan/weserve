@@ -14,7 +14,7 @@ export default {
         'blue-2': "#640EF1",
         'blue-2-hover': "#782FEF",
         'blue-3': "#080C2E",
-        'blue-3-hover': "#191E49",
+        'blue-3-hover': "#5A5B68",
         'gray-1': "#8D90A8",
         'gray-2': "#5D5D7C",
         'yellow': "#FFD15A",

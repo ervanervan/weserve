@@ -4,6 +4,14 @@ import logo from "../assets/logo.svg";
 import iconBag from "../assets/icon-bag.svg";
 import Button from "./Button";
 
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
 export default function Navbar() {
   return (
     <header className="mt-10 mb-24">
@@ -14,30 +22,127 @@ export default function Navbar() {
         </Link>
         <ul className="flex gap-8">
           <li>
-            <Link to={"/products"} className="hover:underline transition-all">
+            <Link
+              to={"/products"}
+              className="text-blue-3 hover:text-blue-3-hover transition-all"
+            >
               Products
             </Link>
           </li>
           <li>
-            <Link to={"/services"} className="hover:underline transition-all">
-              Services
-            </Link>
+            <Menu as="div" className="relative inline-block text-left">
+              <div className="group">
+                <Link to={"/services"}>
+                  <Menu.Button className="text-blue-3 group-hover:text-blue-3-hover transition-all inline-flex items-center w-full justify-center gap-x-1.5">
+                    Services
+                    <ChevronDownIcon
+                      className="-mr-1 h-5 w-5 text-blue-3 group-hover:text-blue-3-hover transition-all"
+                      aria-hidden="true"
+                    />
+                  </Menu.Button>
+                </Link>
+              </div>
+
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
+              >
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white-1 shadow-md focus:outline-none">
+                  <div className="py-2 mx-1">
+                    <Menu.Item>
+                      {({ active }) => (
+                        <a
+                          href="#"
+                          className={classNames(
+                            active
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm rounded-md"
+                          )}
+                        >
+                          <div className="flex gap-2 items-center">
+                            <img src={logo} alt="" width={20} height={20} />
+                            <span>Extra Layers</span>
+                          </div>
+                        </a>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <a
+                          href="#"
+                          className={classNames(
+                            active
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm rounded-md"
+                          )}
+                        >
+                          Customizable
+                        </a>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <a
+                          href="#"
+                          className={classNames(
+                            active
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm rounded-md"
+                          )}
+                        >
+                          AI Automation
+                        </a>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <a
+                          href="#"
+                          className={classNames(
+                            active
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm rounded-md"
+                          )}
+                        >
+                          Auto-Scaling
+                        </a>
+                      )}
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </Transition>
+            </Menu>
           </li>
           <li>
-            <Link to={"/pricing"} className="hover:underline transition-all">
+            <Link
+              to={"/pricing"}
+              className="text-blue-3 hover:text-blue-3-hover transition-all"
+            >
               Pricing
             </Link>
           </li>
           <li>
             <Link
               to={"/testimonials"}
-              className="hover:underline transition-all"
+              className="text-blue-3 hover:text-blue-3-hover transition-all"
             >
               Testimonials
             </Link>
           </li>
           <li>
-            <Link to={"/blog"} className="hover:underline transition-all">
+            <Link
+              to={"/blog"}
+              className="text-blue-3 hover:text-blue-3-hover transition-all"
+            >
               Blog
             </Link>
           </li>
