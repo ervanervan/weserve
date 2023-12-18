@@ -8,3 +8,25 @@
   font-family: "Clash-Display";
   src: url(../static/fonts/ClashDisplay-Variable.ttf);
 }
+
+@layer base {
+  * {
+    @apply p-0 m-0 list-none box-border scroll-smooth;
+  }
+  body {
+    @apply bg-white-2 font-poppins;
+  }
+  h1,
+  h2 {
+    @apply font-clash-display text-blue-3 font-semibold;
+  }
+  p {
+    @apply text-base text-gray-2 font-medium;
+  }
+}
+
+@layer utilities {
+  .max-width {
+    @apply container mx-auto;
+  }
+}
