@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import iconBag from "../assets/icon-bag.svg";
+import icon1 from "../assets/icon-hierarchy-square.svg";
+import icon2 from "../assets/icon-3dcube.svg";
+import icon3 from "../assets/icon-status-up.svg";
+import icon4 from "../assets/icon-driver-refresh.svg";
 import Button from "./Button";
 
 import { Fragment } from "react";
@@ -62,11 +66,11 @@ export default function Navbar() {
                             active
                               ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
                               : "text-gray-700",
-                            "block px-4 py-2 text-sm rounded-md"
+                            "block px-3 py-2.5 text-sm rounded-md"
                           )}
                         >
                           <div className="flex gap-2 items-center">
-                            <img src={logo} alt="" width={20} height={20} />
+                            <img src={icon1} alt="" width={20} height={20} />
                             <span>Extra Layers</span>
                           </div>
                         </a>
@@ -80,10 +84,13 @@ export default function Navbar() {
                             active
                               ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
                               : "text-gray-700",
-                            "block px-4 py-2 text-sm rounded-md"
+                            "block px-3 py-2.5 text-sm rounded-md"
                           )}
                         >
-                          Customizable
+                          <div className="flex gap-2 items-center">
+                            <img src={icon2} alt="" width={20} height={20} />
+                            <span>Customizable</span>
+                          </div>
                         </a>
                       )}
                     </Menu.Item>
@@ -95,10 +102,13 @@ export default function Navbar() {
                             active
                               ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
                               : "text-gray-700",
-                            "block px-4 py-2 text-sm rounded-md"
+                            "block px-3 py-2.5 text-sm rounded-md"
                           )}
                         >
-                          AI Automation
+                          <div className="flex gap-2 items-center">
+                            <img src={icon3} alt="" width={20} height={20} />
+                            <span>AI Automation</span>
+                          </div>
                         </a>
                       )}
                     </Menu.Item>
@@ -110,10 +120,13 @@ export default function Navbar() {
                             active
                               ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
                               : "text-gray-700",
-                            "block px-4 py-2 text-sm rounded-md"
+                            "block px-3 py-2.5 text-sm rounded-md"
                           )}
                         >
-                          Auto-Scaling
+                          <div className="flex gap-2 items-center">
+                            <img src={icon4} alt="" width={20} height={20} />
+                            <span>Auto-Scaling</span>
+                          </div>
                         </a>
                       )}
                     </Menu.Item>
