@@ -12,17 +12,21 @@ import Featured from "../components/Featured";
 const Homepage = () => {
   return (
     <>
-      <Navbar />
-      <main className="max-width">
-        <Hero />
-        <Brands />
-        <Featured />
-        <OurEcosystem />
+      <main>
+        <Navbar />
+        <section className="max-width">
+          <Hero />
+          <Brands />
+          <Featured />
+          <OurEcosystem />
+        </section>
         <OurShowcase />
-        <FAQ />
-        <GetStarted />
+        <section className="max-width">
+          <FAQ />
+          <GetStarted />
+        </section>
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 };
