@@ -9,7 +9,7 @@ export default function Button(props) {
       ${props.className && props.className}
       ${
         props.isPrimary &&
-        "px-10 py-4 text-white-1 text-lg font-bold bg-blue-2 hover:bg-blue-2-hover transition-all duration-300"
+        "px-6 py-4 lg:px-10 text-white-1 text-sm md:text-base lg:text-lg font-bold bg-blue-2 hover:bg-blue-2-hover transition-all duration-300"
       }
       ${
         props.isBlue &&
@@ -17,11 +17,11 @@ export default function Button(props) {
       }
       ${
         props.isYellow &&
-        "px-10 py-4 text-blue-3 text-lg font-bold bg-yellow hover:bg-yellow-hover transition-all duration-300"
+        "px-6 py-4 lg:px-10 text-blue-3 text-lg font-bold bg-yellow hover:bg-yellow-hover transition-all duration-300"
       }
       ${
         props.isWhite &&
-        "px-10 py-4 text-blue-2 text-base font-semibold bg-white-1 transition-all duration-300"
+        "px-6 py-4 lg:px-10 text-blue-2 text-base font-semibold bg-white-1 transition-all duration-300"
       }
       rounded-full`}
     >

@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`mt-3 py-8 mb-[4.25rem] sticky top-0 z-[20] ${
+      className={`mt-3 py-8 sm:mb-8 md:mb-[4.25rem] sticky top-0 z-[20] ${
         open ? "bg-white-2 shadow-md" : "bg-white/10 backdrop-blur-xl"
       }`}
     >
@@ -37,7 +37,7 @@ export default function Navbar() {
         </Link>
         <ul
           className={`lg:flex lg:gap-8 absolute divide-y lg:divide-none top-[6.50rem] lg:static z-[-10] bg-white-2 shadow-md lg:shadow-none lg:bg-transparent lg:z-auto left-0 w-full lg:w-auto lg:px-0 sm:px-16 px-6 lg:py-0 py-3 transition-all duration-300 ease-in ${
-            open ? "top-20 opacity-100" : "-top-24"
+            open ? "top-20 opacity-100" : "-top-[26rem] hidden"
           } opacity-0 lg:opacity-100`}
         >
           <li className="py-4 lg:py-0">
