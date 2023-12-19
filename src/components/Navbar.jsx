@@ -1,13 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
-import iconBag from "../assets/icon-bag.svg";
-import icon1 from "../assets/icon-hierarchy-square.svg";
-import icon2 from "../assets/icon-3dcube.svg";
-import icon3 from "../assets/icon-status-up.svg";
-import icon4 from "../assets/icon-driver-refresh.svg";
-import Button from "./Button";
-
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import {
@@ -15,6 +7,15 @@ import {
   ChevronDownIcon,
   XMarkIcon,
 } from "@heroicons/react/20/solid";
+
+import logo from "../assets/logo.svg";
+import iconBag from "../assets/icon-bag.svg";
+import icon2 from "../assets/icon-3dcube.svg";
+import icon3 from "../assets/icon-status-up.svg";
+import icon4 from "../assets/icon-driver-refresh.svg";
+import icon1 from "../assets/icon-hierarchy-square.svg";
+
+import Button from "./Button";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
