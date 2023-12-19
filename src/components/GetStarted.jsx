@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function GetStarted() {
-  return <div>GetStarted</div>;
+  return <section className="py-20">GetStarted</section>;
 }

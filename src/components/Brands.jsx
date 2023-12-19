@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Brands() {
-  return <div>Brands</div>;
+  return <section className="py-20">Brands</section>;
 }
