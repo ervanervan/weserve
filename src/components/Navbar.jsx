@@ -190,9 +190,9 @@ export default function Navbar() {
           className="lg:hidden cursor-pointer"
         >
           {open ? (
-            <XMarkIcon className="w-7 h-7 text-blue-3" />
+            <XMarkIcon className="w-7 h-7 text-blue-3 hover:text-blue-3-hover transition-all" />
           ) : (
-            <Bars3Icon className="w-7 h-7 text-blue-3" />
+            <Bars3Icon className="w-7 h-7 text-blue-3 hover:text-blue-3-hover transition-all" />
           )}
         </div>
       </nav>
