@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import iconBag from "../assets/icon-bag.svg";
@@ -10,22 +10,36 @@ import Button from "./Button";
 
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import {
+  Bars3Icon,
+  ChevronDownIcon,
+  XMarkIcon,
+} from "@heroicons/react/20/solid";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="mt-10 mb-24">
-      <nav className="flex items-center justify-between">
+    <header
+      className={`mt-3 py-8 mb-[4.25rem] sticky top-0 z-[20] ${
+        open ? "bg-white-2 shadow-md" : "bg-white/10 backdrop-blur-xl"
+      }`}
+    >
+      <nav className="flex items-center justify-between max-width">
         <Link to={"/"} className="flex items-center gap-2">
           <img src={logo} alt="logo" width={40} height={40} />
           <h1 className="text-3xl">weserve.</h1>
         </Link>
-        <ul className="flex gap-8">
-          <li>
+        <ul
+          className={`lg:flex lg:gap-8 absolute divide-y lg:divide-none top-[6.50rem] lg:static z-[-10] bg-white-2 shadow-md lg:shadow-none lg:bg-transparent lg:z-auto left-0 w-full lg:w-auto lg:px-0 sm:px-16 px-6 lg:py-0 py-3 transition-all duration-300 ease-in ${
+            open ? "top-20 opacity-100" : "-top-24"
+          } opacity-0 lg:opacity-100`}
+        >
+          <li className="py-4 lg:py-0">
             <Link
               to={"/products"}
               className="text-blue-3 hover:text-blue-3-hover transition-all"
@@ -33,7 +47,7 @@ export default function Navbar() {
               Products
             </Link>
           </li>
-          <li>
+          <li className="py-4 lg:py-0">
             <Menu as="div" className="relative inline-block text-left">
               <div className="group">
                 <Link to={"/services"}>
@@ -56,7 +70,7 @@ export default function Navbar() {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white-1 shadow-md focus:outline-none">
+                <Menu.Items className="absolute left-0 z-10 mt-3 lg:mt-11 w-56 origin-top-right rounded-md bg-white/10 backdrop-blur-xl shadow-md focus:outline-none">
                   <div className="py-2 mx-1">
                     <Menu.Item>
                       {({ active }) => (
@@ -64,7 +78,7 @@ export default function Navbar() {
                           href="#"
                           className={classNames(
                             active
-                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1 transition-all duration-300"
                               : "text-gray-700",
                             "block px-3 py-2.5 text-sm rounded-md"
                           )}
@@ -82,7 +96,7 @@ export default function Navbar() {
                           href="#"
                           className={classNames(
                             active
-                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1 transition-all duration-300"
                               : "text-gray-700",
                             "block px-3 py-2.5 text-sm rounded-md"
                           )}
@@ -100,7 +114,7 @@ export default function Navbar() {
                           href="#"
                           className={classNames(
                             active
-                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1 transition-all duration-300"
                               : "text-gray-700",
                             "block px-3 py-2.5 text-sm rounded-md"
                           )}
@@ -118,7 +132,7 @@ export default function Navbar() {
                           href="#"
                           className={classNames(
                             active
-                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1"
+                              ? "text-blue-3 hover:text-white-1 hover:bg-blue-1 transition-all duration-300"
                               : "text-gray-700",
                             "block px-3 py-2.5 text-sm rounded-md"
                           )}
@@ -135,7 +149,7 @@ export default function Navbar() {
               </Transition>
             </Menu>
           </li>
-          <li>
+          <li className="py-4 lg:py-0">
             <Link
               to={"/pricing"}
               className="text-blue-3 hover:text-blue-3-hover transition-all"
@@ -143,7 +157,7 @@ export default function Navbar() {
               Pricing
             </Link>
           </li>
-          <li>
+          <li className="py-4 lg:py-0">
             <Link
               to={"/testimonials"}
               className="text-blue-3 hover:text-blue-3-hover transition-all"
@@ -151,7 +165,7 @@ export default function Navbar() {
               Testimonials
             </Link>
           </li>
-          <li>
+          <li className="py-4 lg:py-0">
             <Link
               to={"/blog"}
               className="text-blue-3 hover:text-blue-3-hover transition-all"
@@ -160,7 +174,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-        <div className="flex items-center gap-3">
+        <div className="lg:flex lg:items-center lg:gap-3 absolute lg:static hidden">
           <Link
             to={"/"}
             className="bg-white-1 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
@@ -170,6 +184,16 @@ export default function Navbar() {
           <Link to={"/"}>
             <Button isBlue>Sign In</Button>
           </Link>
+        </div>
+        <div
+          onClick={() => setOpen(!open)}
+          className="lg:hidden cursor-pointer"
+        >
+          {open ? (
+            <XMarkIcon className="w-7 h-7 text-blue-3" />
+          ) : (
+            <Bars3Icon className="w-7 h-7 text-blue-3" />
+          )}
         </div>
       </nav>
     </header>

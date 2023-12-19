@@ -11,17 +11,19 @@ import Featured from "../components/Featured";
 
 const Homepage = () => {
   return (
-    <main className="max-width">
+    <>
       <Navbar />
-      <Hero />
-      <Brands />
-      <Featured />
-      <OurEcosystem />
-      <OurShowcase />
-      <FAQ />
-      <GetStarted />
+      <main className="max-width">
+        <Hero />
+        <Brands />
+        <Featured />
+        <OurEcosystem />
+        <OurShowcase />
+        <FAQ />
+        <GetStarted />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 
