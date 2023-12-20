@@ -21,7 +21,7 @@ export default function Button(props) {
       }
       ${
         props.isWhite &&
-        "px-6 py-4 lg:px-10 text-blue-2 text-base font-semibold bg-white-1 transition-all duration-300"
+        "text-blue-2 text-base font-semibold bg-white-1 transition-all duration-300"
       }
       rounded-full`}
     >
