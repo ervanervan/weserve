@@ -62,13 +62,13 @@ export const DATA_FEATURED = [
     icon: iconStatusUp,
     iconName: "Status Up",
     title: "Extra Layers",
-    description: "Making your project more secure avoiding DDoS",
+    description: "Decide the business flow based on latest reports",
   },
   {
     id: 4,
     icon: iconDriverRefresh,
     iconName: "Driver Refresh",
     title: "Extra Layers",
-    description: "Making your project more secure avoiding DDoS",
+    description: "Have a long weekend without worrying any loss",
   },
 ];
