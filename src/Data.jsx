@@ -46,6 +46,7 @@ export const DATA_FEATURED = [
   {
     id: 1,
     icon: iconHierarchySquare,
+    iconHover: icon3dCube,
     iconName: "Hierarchy Square",
     title: "Extra Layers",
     description: "Making your project more secure avoiding DDoS",
@@ -53,6 +54,7 @@ export const DATA_FEATURED = [
   {
     id: 2,
     icon: icon3dCube,
+    iconHover: iconStatusUp,
     iconName: "3d Cube",
     title: "Customizable",
     description: "Only install what your business needs to grow",
@@ -60,6 +62,7 @@ export const DATA_FEATURED = [
   {
     id: 3,
     icon: iconStatusUp,
+    iconHover: iconHierarchySquare,
     iconName: "Status Up",
     title: "Extra Layers",
     description: "Decide the business flow based on latest reports",
@@ -67,6 +70,7 @@ export const DATA_FEATURED = [
   {
     id: 4,
     icon: iconDriverRefresh,
+    iconHover: iconStatusUp,
     iconName: "Driver Refresh",
     title: "Extra Layers",
     description: "Have a long weekend without worrying any loss",
