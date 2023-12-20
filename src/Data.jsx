@@ -68,7 +68,7 @@ export const DATA_FEATURED = [
     icon: iconStatusUp,
     iconHover: iconStatusUpWhite,
     iconName: "Status Up",
-    title: "Extra Layers",
+    title: "AI Automation",
     description: "Decide the business flow based on latest reports",
   },
   {
@@ -76,7 +76,7 @@ export const DATA_FEATURED = [
     icon: iconDriverRefresh,
     iconHover: iconDriverRefreshWhite,
     iconName: "Driver Refresh",
-    title: "Extra Layers",
+    title: "Auto-Scaling",
     description: "Have a long weekend without worrying any loss",
   },
 ];
