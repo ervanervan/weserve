@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import shadow from "../assets/shadow.svg";
 
 export default function CardFeatured({
   icon,
@@ -20,7 +21,7 @@ export default function CardFeatured({
 
   return (
     <div
-      className="group"
+      className="group relative"
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
     >
@@ -37,14 +38,14 @@ export default function CardFeatured({
             alt={iconName}
             width={46}
             height={46}
-            className="hidden transition duration-300 ease-in-out group-hover:block"
+            className="opacity-100 transition group-hover:hidden"
           />
           <img
             src={iconHover}
             alt={iconName}
             width={46}
             height={46}
-            className="opacity-100 transition duration-300 ease-in-out group-hover:hidden"
+            className="hidden transition group-hover:block"
           />
           <div>
             <h3 className="text-blue-3 font-bold text-xl group-hover:text-white-1 mb-1">
@@ -59,6 +60,12 @@ export default function CardFeatured({
               Learn More
             </button>
           </Link>
+          <img
+            src={shadow}
+            alt="shadow"
+            draggable={false}
+            className="hidden absolute top-0 right-2 group-hover:block"
+          />
         </div>
       </div>
     </div>
