@@ -13,6 +13,10 @@ import iconDriverRefreshWhite from "./assets/icon-driver-refresh-white.svg";
 import iconHierarchySquare from "./assets/icon-hierarchy-square.svg";
 import iconHierarchySquareWhite from "./assets/icon-hierarchy-square-white.svg";
 
+import iconHealth from "./assets/icon-health.svg";
+import iconCpuCharge from "./assets/icon-cpu-charge.svg";
+import conCloudAdd from "./assets/icon-cloud-add.svg";
+
 export const DATA_BRANDS = [
   {
     id: 1,
@@ -78,5 +82,29 @@ export const DATA_FEATURED = [
     iconName: "Driver Refresh",
     title: "Auto-Scaling",
     description: "Have a long weekend without worrying any loss",
+  },
+];
+
+export const DATA_OURECOSYSTEM = [
+  {
+    id: 1,
+    icon: iconHealth,
+    iconName: "Icon Health",
+    title: "$880 Mio",
+    description: "Company budget saved",
+  },
+  {
+    id: 2,
+    icon: iconCpuCharge,
+    iconName: "Icon Cpu Charge",
+    title: "450,392",
+    description: "All servers available",
+  },
+  {
+    id: 3,
+    icon: conCloudAdd,
+    iconName: "Icon Cloud Add",
+    title: "189 Mio",
+    description: "Websites are running good",
   },
 ];

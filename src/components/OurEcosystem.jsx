@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import iconDeviceMessage from "../assets/icon-device-message.svg";
-import iconCloudAdd from "../assets/icon-cloud-add.svg";
+import { DATA_OURECOSYSTEM } from "../Data";
 import Button from "./Button";
 
 export default function OurEcosystem() {
@@ -22,23 +22,28 @@ export default function OurEcosystem() {
                 acquisition much user-friendly and boosting up sales.
               </p>
             </div>
-            <div className="flex gap-x-4 items-center bg-white-1 max-w-[31.25rem] p-5 rounded-2xl">
-              <img
-                src={iconCloudAdd}
-                alt="icon cloud-add"
-                width={46}
-                height={46}
-                className="w-7 h-7 md:w-11 md:h-11"
-              />
-              <div className="flex flex-col gap-y-1">
-                <span className="text-blue-3 text-base sm:text-lg md:text-xl font-bold">
-                  Super Reliable
-                </span>
-                <span className="text-gray-2 text-xs sm:text-sm md:text-base">
-                  24/7 Always Active
-                </span>
+            {DATA_OURECOSYSTEM.map((item) => (
+              <div
+                key={item.id}
+                className="flex gap-x-4 items-center bg-white-1 max-w-[31.25rem] p-5 rounded-2xl"
+              >
+                <img
+                  src={item.icon}
+                  alt={item.iconName}
+                  width={46}
+                  height={46}
+                  className="w-7 h-7 md:w-11 md:h-11"
+                />
+                <div className="flex flex-col gap-y-1">
+                  <span className="text-blue-3 text-base sm:text-lg md:text-xl font-bold">
+                    {item.title}
+                  </span>
+                  <span className="text-gray-2 text-xs sm:text-sm md:text-base">
+                    {item.description}
+                  </span>
+                </div>
               </div>
-            </div>
+            ))}
             <div className="flex items-center gap-x-5">
               <Link to={"/"}>
                 <Button isPrimary>Try Free Trial</Button>
