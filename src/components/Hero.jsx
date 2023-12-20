@@ -13,7 +13,7 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <section className="py-8 md:py-0">
-      <div className="flex flex-col gap-16 lg:flex-row items-center justify-between">
+      <div className="flex flex-col gap-y-16 lg:flex-row items-center justify-between">
         <div className="flex flex-col gap-y-10">
           <div className="bg-white-1 w-fit flex items-center gap-x-2 px-4 py-2 rounded-full">
             <img src={iconGlobalSolid} alt="icon global" />
@@ -22,11 +22,11 @@ export default function Hero() {
             </p>
           </div>
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-3">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl mb-3">
               Grow Online <br /> Business Faster.
             </h1>
             <p>
-              We provide a variety of servers to grow your users{" "}
+              We provide a variety of servers to grow your users
               <br className="hidden sm:block" />
               acquisition much user-friendly and boosting up sales.
             </p>
@@ -47,9 +47,11 @@ export default function Hero() {
           <img
             src={ulistrationHero}
             alt="ulistration hero"
+            width={400}
+            height={500}
             className="w-[25rem]"
           />
-          <div className="absolute top-0 left-0 flex gap-x-5 bg-white-1 p-4 sm:p-5 items-center rounded-3xl">
+          <div className="absolute top-0 left-0 flex gap-x-2.5 md:gap-x-5 bg-white-1 p-4 sm:p-5 items-center rounded-3xl">
             <img
               src={iconCloudAdd}
               alt="icon cloud-add"
