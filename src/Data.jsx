@@ -17,6 +17,11 @@ import iconHealth from "./assets/icon-health.svg";
 import iconCpuCharge from "./assets/icon-cpu-charge.svg";
 import conCloudAdd from "./assets/icon-cloud-add.svg";
 
+import imgShowcase1 from "./assets/image-showcase-1.png";
+import imgShowcase2 from "./assets/image-showcase-2.png";
+import imgShowcase3 from "./assets/image-showcase-3.png";
+import imgShowcase4 from "./assets/image-showcase-4.png";
+
 export const DATA_BRANDS = [
   {
     id: 1,
@@ -106,5 +111,28 @@ export const DATA_OURECOSYSTEM = [
     iconName: "Icon Cloud Add",
     title: "189 Mio",
     description: "Websites are running good",
+  },
+];
+
+export const DATA_OURSHOWCASE = [
+  {
+    id: 1,
+    imgURL: imgShowcase1,
+    imgName: "Showcase 1",
+  },
+  {
+    id: 2,
+    imgURL: imgShowcase2,
+    imgName: "Showcase 2",
+  },
+  {
+    id: 3,
+    imgURL: imgShowcase3,
+    imgName: "Showcase 3",
+  },
+  {
+    id: 4,
+    imgURL: imgShowcase4,
+    imgName: "Showcase 4",
   },
 ];
