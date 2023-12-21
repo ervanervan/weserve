@@ -137,7 +137,7 @@ export const DATA_OURSHOWCASE = [
   },
 ];
 
-export const DATA_FAQ = [
+export const DATA_LEFT_FAQ = [
   {
     id: 1,
     question: "Why do we need to use Kapp?",
@@ -156,14 +156,17 @@ export const DATA_FAQ = [
     answer:
       "Migrating to Kubernetes involves steps like containerizing your app, selecting a migration strategy (rehost, refactor, rearchitect), setting up a Kubernetes cluster, defining deployment configurations, deploying your app to Kubernetes, and conducting thorough testing and monitoring post-migration.",
   },
+];
+
+export const DATA_RIGHT_FAQ = [
   {
-    id: 4,
-    question: "What if data doesn’t get stored?",
+    id: 1,
+    question: "What if data doesn't get stored?",
     answer:
       "When data isn't stored, potential issues could include misconfigured storage settings, permission problems, network interruptions, code errors in data handling, or resource constraints. Checking these areas helps identify and resolve the problem.",
   },
   {
-    id: 5,
+    id: 2,
     question: "Can we guarantee no any loss at all?",
     answer:
       "Ensuring absolutely no data loss is challenging. Implementing redundancy, backups, robust error handling, and resilient infrastructure significantly reduces the risk, but absolute guarantees are rare due to unforeseen circumstances or system failures.",

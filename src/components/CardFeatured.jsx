@@ -55,7 +55,7 @@ export default function CardFeatured({
               {description}
             </p>
           </div>
-          <Link to={"/"}>
+          <Link to={"/"} className="w-fit">
             <button className="text-blue-2 text-base font-semibold bg-transparent bg-white-1 rounded-full transition-all duration-300 group-hover:text-white-1">
               Learn More
             </button>
