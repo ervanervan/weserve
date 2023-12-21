@@ -136,3 +136,36 @@ export const DATA_OURSHOWCASE = [
     imgName: "Showcase 4",
   },
 ];
+
+export const DATA_FAQ = [
+  {
+    id: 1,
+    question: "Why do we need to use Kapp?",
+    answer:
+      "Kubernetes, often referred to as 'Kapp', is a container orchestration platform that automates the deployment, scaling, and management of containerized applications. It streamlines operations, facilitates scaling, ensures application health, and provides a consistent environment across various stages of development, making it easier to manage complex systems efficiently.",
+  },
+  {
+    id: 2,
+    question: "Do we need to pay 6 months per item?",
+    answer:
+      "Kapp is able to develop by themselve without removing the parents permission and lorem dolor si amet fully run network at 100% avoiding data-loss at any moments.",
+  },
+  {
+    id: 3,
+    question: "How to migrate from other service?",
+    answer:
+      "Migrating to Kubernetes involves steps like containerizing your app, selecting a migration strategy (rehost, refactor, rearchitect), setting up a Kubernetes cluster, defining deployment configurations, deploying your app to Kubernetes, and conducting thorough testing and monitoring post-migration.",
+  },
+  {
+    id: 4,
+    question: "What if data doesn’t get stored?",
+    answer:
+      "When data isn't stored, potential issues could include misconfigured storage settings, permission problems, network interruptions, code errors in data handling, or resource constraints. Checking these areas helps identify and resolve the problem.",
+  },
+  {
+    id: 5,
+    question: "Can we guarantee no any loss at all?",
+    answer:
+      "Ensuring absolutely no data loss is challenging. Implementing redundancy, backups, robust error handling, and resilient infrastructure significantly reduces the risk, but absolute guarantees are rare due to unforeseen circumstances or system failures.",
+  },
+];
