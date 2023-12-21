@@ -56,7 +56,7 @@ export default function CardFeatured({
             </p>
           </div>
           <Link to={"/"}>
-            <button className="text-blue-2 bg-transparent text-base font-semibold bg-white-1 rounded-full transition-all duration-300 group-hover:text-white-1">
+            <button className="text-blue-2 text-base font-semibold bg-transparent bg-white-1 rounded-full transition-all duration-300 group-hover:text-white-1">
               Learn More
             </button>
           </Link>
