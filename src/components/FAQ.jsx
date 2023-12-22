@@ -42,6 +42,7 @@ export default function FAQ() {
                         alt="icon Arrow Up"
                         width={18}
                         height={18}
+                        className="max-w-fit"
                       />
                     </div>
                   ) : (
@@ -51,6 +52,7 @@ export default function FAQ() {
                         alt="icon Arrow Down"
                         width={18}
                         height={18}
+                        className="max-w-fit"
                       />
                     </div>
                   )}
@@ -85,6 +87,7 @@ export default function FAQ() {
                         alt="icon Arrow Up"
                         width={18}
                         height={18}
+                        className="max-w-fit"
                       />
                     </div>
                   ) : (
@@ -94,6 +97,7 @@ export default function FAQ() {
                         alt="icon Arrow Down"
                         width={18}
                         height={18}
+                        className="max-w-fit"
                       />
                     </div>
                   )}
