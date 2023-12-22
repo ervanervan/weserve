@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import shadowMD from "../assets/icon-shadow-MD.svg";
 
 export default function CardGetStarted({ icon, iconName, iconHover, title }) {
   return (
@@ -25,11 +26,17 @@ export default function CardGetStarted({ icon, iconName, iconHover, title }) {
               {title}
             </span>
             <Link to={"/"} className="w-fit hidden group-hover:block">
-              <button className="text-blue-2 text-base font-semibold bg-transparent bg-white-1 rounded-full transition-all duration-300 group-hover:text-white-1">
+              <button className="text-white-1 text-base font-semibold group-hover:bg-transparent bg-white-1 rounded-full transition-all duration-300 group-hover:text-gray-1">
                 Learn More
               </button>
             </Link>
           </div>
+          <img
+            src={shadowMD}
+            alt="shadow"
+            draggable={false}
+            className="hidden absolute top-1 right-5 group-hover:block"
+          />
         </div>
       </div>
     </div>
