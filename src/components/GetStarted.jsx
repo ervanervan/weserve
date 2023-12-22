@@ -33,21 +33,23 @@ export default function GetStarted() {
               acquisition much user-friendly and boosting up sales.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row md:items-center gap-5">
-            <Link to={"/"}>
+          <div className="flex flex-col gap-5">
+            <Link to={"/"} className="flex flex-col">
               <Button isYellow>Explore More</Button>
             </Link>
-            <Link to={"/"} className="flex items-center gap-x-2">
-              <img
-                src={iconDeviceMessageWhite}
-                alt="icon device message white"
-                width={24}
-                height={24}
-              />
-              <span className="text-white-1 text-sm md:text-base font-semibold">
-                Schedule a Demo
-              </span>
-            </Link>
+            <div className="flex flex-col items-center">
+              <Link to={"/"} className="flex items-center gap-x-2">
+                <img
+                  src={iconDeviceMessageWhite}
+                  alt="icon device message white"
+                  width={24}
+                  height={24}
+                />
+                <span className="text-white-1 text-sm md:text-base font-semibold">
+                  Schedule a Demo
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
 

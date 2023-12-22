@@ -8,7 +8,7 @@ export default function OurShowcase() {
   return (
     <section className="py-8 md:py-12">
       <div className="flex flex-col gap-y-8">
-        <div className="text-center">
+        <div className="text-center max-width">
           <h2 className="text-[1.75rem] sm:text-3xl md:text-4xl lg:lg:text-[2.50rem] xl:text-5xl mb-3">
             Our Showcase
           </h2>
