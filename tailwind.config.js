@@ -18,7 +18,7 @@ export default {
         'gray-1': "#8D90A8",
         'gray-2': "#5D5D7C",
         'yellow': "#FFD15A",
-        'yellow-hover': "#FFD873",
+        'yellow-hover': "#FFC633",
       },
 
       fontFamily: {

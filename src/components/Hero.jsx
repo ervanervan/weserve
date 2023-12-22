@@ -16,7 +16,12 @@ export default function Hero() {
       <div className="flex flex-col gap-y-16 lg:flex-row items-center justify-between">
         <div className="flex flex-col gap-y-10">
           <div className="bg-white-1 w-fit flex items-center gap-x-2 px-4 py-2 rounded-full">
-            <img src={iconGlobalSolid} alt="icon global" />
+            <img
+              src={iconGlobalSolid}
+              alt="icon global"
+              width={24}
+              height={24}
+            />
             <p className="text-blue-3 font-semibold">
               We host more than 120,000 websites
             </p>
@@ -36,7 +41,12 @@ export default function Hero() {
               <Button isPrimary>Try Free Trial</Button>
             </Link>
             <Link to={"/"} className="flex items-center gap-x-2">
-              <img src={iconDeviceMessage} alt="icon device message" />
+              <img
+                src={iconDeviceMessage}
+                alt="icon device message"
+                width={24}
+                height={24}
+              />
               <span className="text-blue-2 text-sm md:text-base font-semibold">
                 Schedule a Demo
               </span>

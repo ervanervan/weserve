@@ -21,7 +21,7 @@
     @apply font-clash-display text-blue-3 font-semibold;
   }
   p {
-    @apply text-sm md:text-base text-gray-2 font-medium;
+    @apply text-sm leading-6 md:text-base md:leading-8 text-gray-2 font-medium;
   }
 }
 

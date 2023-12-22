@@ -21,7 +21,7 @@ export default function Button(props) {
       }
       ${
         props.isYellow &&
-        "px-6 py-4 lg:px-10 text-blue-3 text-lg font-bold bg-yellow hover:bg-yellow-hover"
+        "px-6 py-3 lg:py-4 lg:px-10 text-blue-3 text-sm md:text-base lg:text-lg font-bold bg-yellow hover:bg-yellow-hover"
       }
       rounded-full transition-all duration-300`}
     >

@@ -22,6 +22,16 @@ import imgShowcase2 from "./assets/image-showcase-2.png";
 import imgShowcase3 from "./assets/image-showcase-3.png";
 import imgShowcase4 from "./assets/image-showcase-4.png";
 
+import iconScroll from "./assets/icon-scroll.svg";
+import iconScrollWhite from "./assets/icon-scroll-white.svg";
+import iconCpuChargeWhite from "./assets/icon-cpu-charge-white.svg";
+import iconSecurityUser from "./assets/icon-security-user.svg";
+import iconSecurityUserWhite from "./assets/icon-security-user-white.svg";
+import iconCandle from "./assets/icon-candle.svg";
+import iconCandleWhite from "./assets/icon-candle-white.svg";
+import iconCrown from "./assets/icon-crown.svg";
+import iconCrownWhite from "./assets/icon-crown-white.svg";
+
 export const DATA_BRANDS = [
   {
     id: 1,
@@ -170,5 +180,50 @@ export const DATA_RIGHT_FAQ = [
     question: "Can we guarantee no any loss at all?",
     answer:
       "Ensuring absolutely no data loss is challenging. Implementing redundancy, backups, robust error handling, and resilient infrastructure significantly reduces the risk, but absolute guarantees are rare due to unforeseen circumstances or system failures.",
+  },
+];
+
+export const DATA_GETSTARTED = [
+  {
+    id: 1,
+    icon: iconScroll,
+    iconHover: iconScrollWhite,
+    iconName: "icon Scroll",
+    title: "Web Crawl",
+  },
+  {
+    id: 2,
+    icon: iconCpuCharge,
+    iconHover: iconCpuChargeWhite,
+    iconName: "icon Cpu Charge",
+    title: "Fast Report",
+  },
+  {
+    id: 3,
+    icon: iconSecurityUser,
+    iconHover: iconSecurityUserWhite,
+    iconName: "icon Security User",
+    title: "Anti-DDoS",
+  },
+  {
+    id: 4,
+    icon: iconStatusUp,
+    iconHover: iconStatusUpWhite,
+    iconName: "icon Status Up",
+    title: "Auto-Scaling",
+  },
+  {
+    id: 5,
+    icon: iconCandle,
+    iconHover: iconCandleWhite,
+    iconName: "icon Candle",
+    title: "AI Perform",
+  },
+  {
+    id: 6,
+    icon: iconCrown,
+    iconHover: iconCrownWhite,
+    iconName: "icon Crown",
+    title: "Top Plugins+",
   },
 ];
