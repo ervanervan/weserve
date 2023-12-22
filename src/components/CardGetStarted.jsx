@@ -26,7 +26,7 @@ export default function CardGetStarted({ icon, iconName, iconHover, title }) {
               {title}
             </span>
             <Link to={"/"} className="w-fit hidden group-hover:block">
-              <button className="text-white-1 text-base font-semibold group-hover:bg-transparent bg-white-1 rounded-full transition-all duration-300 group-hover:text-gray-1">
+              <button className="text-white-1 text-base font-semibold bg-transparent group-hover:bg-transparent rounded-full transition-all duration-300 group-hover:text-gray-1">
                 Learn More
               </button>
             </Link>
