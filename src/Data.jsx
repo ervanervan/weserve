@@ -227,3 +227,39 @@ export const DATA_GETSTARTED = [
     title: "Top Plugins+",
   },
 ];
+
+export const FOOTER_LINKS = [
+  {
+    id: 1,
+    title: "Products",
+    sublinks: [
+      { id: 1, title: "Powerful Reports", url: "/" },
+      { id: 2, title: "Blockchain", url: "/" },
+      { id: 3, title: "Auto-Backup", url: "/" },
+      { id: 4, title: "Data Science", url: "/" },
+      { id: 5, title: "Auto-Scaling Up", url: "/" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Resources",
+    sublinks: [
+      { id: 1, title: "Support 24/7", url: "/" },
+      { id: 2, title: "Help Center", url: "/" },
+      { id: 3, title: "How-to Instructions", url: "/" },
+      { id: 4, title: "Blog & Tips", url: "/" },
+      { id: 5, title: "About Us", url: "/" },
+    ],
+  },
+  {
+    id: 3,
+    title: "Company",
+    sublinks: [
+      { id: 1, title: "Privacy and Policy", url: "/" },
+      { id: 2, title: "Terms and Conditions", url: "/" },
+      { id: 3, title: "Investor Relations", url: "/" },
+      { id: 4, title: "Join With Us", url: "/" },
+      { id: 5, title: "Our Statistics", url: "/" },
+    ],
+  },
+];
