@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import iconSMS from "../assets/icon-sms.svg";
-import iconGlobal from "../assets/icon-global.svg";
-import iconCall from "../assets/icon-call.svg";
-import iconVideoPlay from "../assets/icon-video-play.svg";
 import { FOOTER_LINKS } from "../Data";
+import SmsIcon from "./icon/SmsIcon";
+import Global2Icon from "./icon/Global2Icon";
+import CallIcon from "./icon/CallIcon";
+import VideoPlayIcon from "./icon/VideoPlayIcon";
 
 export default function Footer() {
   return (
@@ -23,51 +23,27 @@ export default function Footer() {
           <div className="flex gap-x-3.5">
             <Link
               to={"/"}
-              className="group bg-white-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
+              className="group bg-white-1 dark:bg-dark-blue-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
             >
-              <img
-                src={iconSMS}
-                alt="icon SMS"
-                width={24}
-                height={24}
-                className="group-hover:scale-[110%] transition-all duration-300"
-              />
+              <SmsIcon />
             </Link>
             <Link
               to={"/"}
-              className="group bg-white-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
+              className="group bg-white-1 dark:bg-dark-blue-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
             >
-              <img
-                src={iconGlobal}
-                alt="icon Global"
-                width={24}
-                height={24}
-                className="group-hover:scale-[110%] transition-all duration-300"
-              />
+              <Global2Icon />
             </Link>
             <Link
               to={"/"}
-              className="group bg-white-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
+              className="group bg-white-1 dark:bg-dark-blue-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
             >
-              <img
-                src={iconCall}
-                alt="icon Call"
-                width={24}
-                height={24}
-                className="group-hover:scale-[110%] transition-all duration-300"
-              />
+              <CallIcon />
             </Link>
             <Link
               to={"/"}
-              className="group bg-white-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
+              className="group bg-white-1 dark:bg-dark-blue-1 p-3 rounded-full hover:bg-white-1-hover transition-all duration-300"
             >
-              <img
-                src={iconVideoPlay}
-                alt="icon Video Play"
-                width={24}
-                height={24}
-                className="group-hover:scale-[110%] transition-all duration-300"
-              />
+              <VideoPlayIcon />
             </Link>
           </div>
         </div>

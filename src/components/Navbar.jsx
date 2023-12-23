@@ -11,7 +11,6 @@ import {
 } from "@heroicons/react/20/solid";
 
 import logo from "../assets/logo.svg";
-import iconBag from "../assets/icon-bag.svg";
 import icon2 from "../assets/icon-3dcube.svg";
 import icon3 from "../assets/icon-status-up.svg";
 import icon4 from "../assets/icon-driver-refresh.svg";
@@ -19,6 +18,7 @@ import icon1 from "../assets/icon-hierarchy-square.svg";
 
 import Button from "./Button";
 import useTheme from "../UseTheme";
+import Bag2Icon from "./icon/Bag2Icon";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -37,7 +37,7 @@ export default function Navbar() {
       className={`py-8 sm:mb-8 md:mb-[4.25rem] transition-all ease-in duration-500 sticky top-0 z-[20] ${
         isOpen
           ? "bg-white-2 dark:bg-dark-blue-1 shadow-md"
-          : "bg-white/10 dark:bg-dark-blue-1 backdrop-blur-xl"
+          : "bg-white/10 dark:bg-black/10 backdrop-blur-xl"
       }`}
     >
       <nav className="flex items-center justify-between max-width">
@@ -200,9 +200,9 @@ export default function Navbar() {
           </button>
           <Link
             to={"/"}
-            className="bg-white-1 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
+            className="bg-white-1 dark:bg-dark-blue-2 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
           >
-            <img src={iconBag} alt="icon" width={24} height={24} />
+            <Bag2Icon />
           </Link>
           <Link to={"/"}>
             <Button isBlue>Sign In</Button>

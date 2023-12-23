@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import iconGlobalSolid from "../assets/icon-global-solid.svg";
 import iconGlobalWhite from "../assets/icon-global-white.svg";
 import iconDeviceMessage from "../assets/icon-device-message.svg";
 import iconStatusUp from "../assets/icon-status-up.svg";
@@ -9,6 +8,8 @@ import iconCloudAdd from "../assets/icon-cloud-add.svg";
 import ulistrationHero from "../assets/ulistration-hero.png";
 
 import Button from "./Button";
+import GlobalIcon from "./icon/GlobalIcon";
+import DeviceMessageIcon from "./icon/DeviceMessageIcon";
 
 export default function Hero() {
   return (
@@ -16,12 +17,7 @@ export default function Hero() {
       <div className="flex flex-col gap-y-16 lg:flex-row items-center justify-between">
         <div className="flex flex-col gap-y-10">
           <div className="bg-white-1 dark:bg-dark-blue-2 w-fit flex items-center gap-x-2 px-4 py-2 rounded-full">
-            <img
-              src={iconGlobalSolid}
-              alt="icon global"
-              width={24}
-              height={24}
-            />
+            <GlobalIcon />
             <p className="text-blue-3 dark:text-white-2 font-semibold">
               We host more than 120,000 websites
             </p>
@@ -41,13 +37,7 @@ export default function Hero() {
               <Button isPrimary>Try Free Trial</Button>
             </Link>
             <Link to={"/"} className="flex items-center gap-x-2">
-              <img
-                src={iconDeviceMessage}
-                alt="icon device message"
-                width={24}
-                height={24}
-                className="text-white-2"
-              />
+              <DeviceMessageIcon />
               <span className="text-blue-2 dark:text-white-2 text-sm md:text-base font-semibold">
                 Schedule a Demo
               </span>

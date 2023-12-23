@@ -10,6 +10,7 @@ import iconStatusUp from "../assets/icon-status-up.svg";
 import iconDeviceMessage from "../assets/icon-device-message.svg";
 import iconMessageProgramming from "../assets/icon-message-programming.svg";
 import ulistrationEcosystem from "../assets/ulistration-ecosystem.png";
+import DeviceMessageIcon from "./icon/DeviceMessageIcon";
 
 export default function OurEcosystem() {
   return (
@@ -102,6 +103,7 @@ export default function OurEcosystem() {
             </div>
           </div>
         </div>
+
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col mx-auto lg:items-start gap-y-10">
             <div className="text-start sm:text-center lg:text-start">
@@ -120,13 +122,7 @@ export default function OurEcosystem() {
                   key={item.id}
                   className="flex gap-x-4 items-center bg-white-1 dark:bg-dark-blue-2 w-full sm:w-[29rem] xl:w-[36.5rem] p-5 rounded-2xl"
                 >
-                  <img
-                    src={item.icon}
-                    alt={item.iconName}
-                    width={46}
-                    height={46}
-                    className="w-7 h-7 md:w-11 md:h-11"
-                  />
+                  <div>{item.icon}</div>
                   <div className="flex flex-col gap-y-1">
                     <span className="text-blue-3 dark:text-white-2 text-base sm:text-lg md:text-xl font-bold">
                       {item.title}
@@ -143,7 +139,7 @@ export default function OurEcosystem() {
                 <Button isPrimary>Try Free Trial</Button>
               </Link>
               <Link to={"/"} className="flex items-center gap-x-2">
-                <img src={iconDeviceMessage} alt="icon device message" />
+                <DeviceMessageIcon />
                 <span className="text-blue-2 dark:text-white-2 text-sm md:text-base font-semibold">
                   Schedule a Demo
                 </span>

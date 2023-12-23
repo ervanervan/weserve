@@ -39,7 +39,7 @@ export default function FAQ() {
                     {item.question}
                   </h3>
                   {openIdLeft === item.id ? (
-                    <div className="bg-blue-3 p-1.5 rounded-full">
+                    <div className="bg-blue-3 dark:bg-dark-blue-2 p-1.5 rounded-full">
                       <img
                         src={iconArrowUp}
                         alt="icon Arrow Up"
@@ -89,7 +89,7 @@ export default function FAQ() {
                     {item.question}
                   </h3>
                   {openIdRight === item.id ? (
-                    <div className="bg-blue-3 p-1.5 rounded-full">
+                    <div className="bg-blue-3 dark:bg-dark-blue-2 p-1.5 rounded-full">
                       <img
                         src={iconArrowUp}
                         alt="icon Arrow Up"

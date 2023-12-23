@@ -31,6 +31,9 @@ import iconCandle from "./assets/icon-candle.svg";
 import iconCandleWhite from "./assets/icon-candle-white.svg";
 import iconCrown from "./assets/icon-crown.svg";
 import iconCrownWhite from "./assets/icon-crown-white.svg";
+import HealthIcon from "./components/icon/HealthIcon";
+import CpuChargeIcon from "./components/icon/CpuChargeIcon";
+import CloudAddIcon from "./components/icon/CloudAddIcon";
 
 export const DATA_BRANDS = [
   {
@@ -103,22 +106,19 @@ export const DATA_FEATURED = [
 export const DATA_OURECOSYSTEM = [
   {
     id: 1,
-    icon: iconHealth,
-    iconName: "Icon Health",
+    icon: <HealthIcon />,
     title: "$880 Mio",
     description: "Company budget saved",
   },
   {
     id: 2,
-    icon: iconCpuCharge,
-    iconName: "Icon Cpu Charge",
+    icon: <CpuChargeIcon />,
     title: "450,392",
     description: "All servers available",
   },
   {
     id: 3,
-    icon: conCloudAdd,
-    iconName: "Icon Cloud Add",
+    icon: <CloudAddIcon />,
     title: "189 Mio",
     description: "Websites are running good",
   },
