@@ -33,11 +33,11 @@ export default function GetStarted() {
               acquisition much user-friendly and boosting up sales.
             </p>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col md:flex-row gap-5">
             <Link to={"/"} className="flex flex-col">
               <Button isYellow>Explore More</Button>
             </Link>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col md:flex-row items-center">
               <Link to={"/"} className="flex items-center gap-x-2">
                 <img
                   src={iconDeviceMessageWhite}
@@ -53,7 +53,7 @@ export default function GetStarted() {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end 2xl:ml-72 gap-5 flex-wrap">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end gap-5 flex-wrap">
           {DATA_GETSTARTED.map((item) => {
             return <CardGetStarted key={item.id} {...item} />;
           })}

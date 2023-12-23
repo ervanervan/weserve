@@ -9,7 +9,7 @@ export default function Brands() {
         autoFill={true}
         gradient={true}
         gradientColor="#F1F4F5"
-        gradientWidth={100}
+        gradientWidth={50}
       >
         {DATA_BRANDS.map((item) => (
           <div key={item.name} className="flex items-center px-6 md:my-9">

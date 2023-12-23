@@ -25,7 +25,7 @@ export default function CardFeatured({
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
     >
-      <div className="max-w-[18.50rem] rounded-2xl bg-white-1 group-hover:bg-blue-3 px-6 py-8 transition-all duration-500">
+      <div className="max-w-[18.50rem] rounded-2xl bg-white-1 dark:bg-dark-blue-2 group-hover:bg-blue-3 dark:group-hover:bg-blue-2 px-6 py-8 transition-all duration-500">
         <div className="flex flex-col gap-y-8">
           {/* <img
             src={isHovered ? iconHover : icon}
@@ -48,15 +48,15 @@ export default function CardFeatured({
             className="hidden transition group-hover:block"
           />
           <div>
-            <h3 className="text-blue-3 font-bold text-xl group-hover:text-white-1 mb-1">
+            <h3 className="text-blue-3 dark:text-white-2 font-bold text-xl group-hover:text-white-1 mb-1">
               {title}
             </h3>
-            <p className="w-4/5 md:w-full group-hover:text-gray-1">
+            <p className="w-4/5 md:w-full group-hover:dark:text-white-2 group-hover:text-gray-1">
               {description}
             </p>
           </div>
           <Link to={"/"} className="w-fit">
-            <button className="text-blue-2 text-base font-semibold bg-transparent group-hover:bg-transparent rounded-full transition-all duration-300 group-hover:text-white-1">
+            <button className="text-blue-2 dark:text-white-2 text-base font-semibold bg-transparent group-hover:bg-transparent rounded-full transition-all duration-300 group-hover:text-white-1">
               Learn More
             </button>
           </Link>

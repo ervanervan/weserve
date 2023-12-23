@@ -9,10 +9,10 @@ export default function OurShowcase() {
     <section className="py-8 md:py-12">
       <div className="flex flex-col gap-y-8">
         <div className="text-center max-width">
-          <h2 className="text-[1.75rem] sm:text-3xl md:text-4xl lg:lg:text-[2.50rem] xl:text-5xl mb-3">
+          <h2 className="text-[1.75rem] dark:text-white-2 sm:text-3xl md:text-4xl lg:lg:text-[2.50rem] xl:text-5xl mb-3">
             Our Showcase
           </h2>
-          <p>
+          <p className="dark:text-gray-1">
             They built amazing website to help more people around the world
             <br className="hidden sm:block" />
             by using our recommendation services and products

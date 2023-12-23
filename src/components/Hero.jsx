@@ -30,7 +30,7 @@ export default function Hero() {
             <h1 className="text-4xl dark:text-white-2 sm:text-5xl md:text-6xl xl:text-7xl mb-3">
               Grow Online <br /> Business Faster.
             </h1>
-            <p className="dark:text-gray-2">
+            <p className="dark:text-gray-1">
               We provide a variety of servers to grow your users
               <br className="hidden sm:block" />
               acquisition much user-friendly and boosting up sales.
@@ -46,8 +46,9 @@ export default function Hero() {
                 alt="icon device message"
                 width={24}
                 height={24}
+                className="text-white-2"
               />
-              <span className="text-blue-2 text-sm md:text-base font-semibold">
+              <span className="text-blue-2 dark:text-white-2 text-sm md:text-base font-semibold">
                 Schedule a Demo
               </span>
             </Link>

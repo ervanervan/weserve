@@ -43,7 +43,7 @@ export default function Navbar() {
       <nav className="flex items-center justify-between max-width">
         <Link to={"/"} className="flex items-center gap-2">
           <img src={logo} alt="logo" width={40} height={40} />
-          <h1 className="text-3xl dark:text-white-1">weserve.</h1>
+          <h1 className="text-3xl dark:text-white-2">weserve.</h1>
         </Link>
         <ul
           className={`lg:flex lg:gap-8 absolute divide-y lg:divide-none top-[6.50rem] lg:static z-[-10] bg-white-2 shadow-md lg:shadow-none lg:bg-transparent lg:z-auto left-0 w-full lg:w-auto lg:px-0 sm:px-16 px-6 lg:py-0 py-3 transition-all duration-300 ease-in ${

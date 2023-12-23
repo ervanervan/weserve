@@ -105,10 +105,10 @@ export default function OurEcosystem() {
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col mx-auto lg:items-start gap-y-10">
             <div className="text-start sm:text-center lg:text-start">
-              <h2 className="text-[1.75rem] sm:text-3xl md:text-4xl lg:text-[2.50rem] xl:text-5xl mb-3">
+              <h2 className="text-[1.75rem] dark:text-white-2 sm:text-3xl md:text-4xl lg:text-[2.50rem] xl:text-5xl mb-3">
                 We Have Very <br /> Strong Ecosystem
               </h2>
-              <p>
+              <p className="dark:text-gray-1">
                 We provide a variety of servers to grow your users
                 <br className="hidden sm:block" />
                 acquisition much user-friendly and boosting up sales.
@@ -118,7 +118,7 @@ export default function OurEcosystem() {
               {DATA_OURECOSYSTEM.map((item) => (
                 <div
                   key={item.id}
-                  className="flex gap-x-4 items-center bg-white-1 w-full sm:w-[29rem] xl:w-[36.5rem] p-5 rounded-2xl"
+                  className="flex gap-x-4 items-center bg-white-1 dark:bg-dark-blue-2 w-full sm:w-[29rem] xl:w-[36.5rem] p-5 rounded-2xl"
                 >
                   <img
                     src={item.icon}
@@ -128,10 +128,10 @@ export default function OurEcosystem() {
                     className="w-7 h-7 md:w-11 md:h-11"
                   />
                   <div className="flex flex-col gap-y-1">
-                    <span className="text-blue-3 text-base sm:text-lg md:text-xl font-bold">
+                    <span className="text-blue-3 dark:text-white-2 text-base sm:text-lg md:text-xl font-bold">
                       {item.title}
                     </span>
-                    <span className="text-gray-2 text-xs sm:text-sm md:text-base">
+                    <span className="text-gray-2 dark:text-gray-1 text-xs sm:text-sm md:text-base">
                       {item.description}
                     </span>
                   </div>
@@ -144,7 +144,7 @@ export default function OurEcosystem() {
               </Link>
               <Link to={"/"} className="flex items-center gap-x-2">
                 <img src={iconDeviceMessage} alt="icon device message" />
-                <span className="text-blue-2 text-sm md:text-base font-semibold">
+                <span className="text-blue-2 dark:text-white-2 text-sm md:text-base font-semibold">
                   Schedule a Demo
                 </span>
               </Link>

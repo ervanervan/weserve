@@ -27,6 +27,6 @@
 
 @layer utilities {
   .max-width {
-    @apply container mx-auto px-4 md:px-8 xl:px-0;
+    @apply max-w-7xl mx-auto px-4 md:px-8 xl:px-0;
   }
 }

@@ -21,18 +21,21 @@ export default function FAQ() {
   return (
     <section className="py-8 md:py-12">
       <div className="flex flex-col gap-y-8">
-        <h2 className="text-center text-[1.75rem] sm:text-3xl md:text-4xl lg:lg:text-[2.50rem] xl:text-5xl">
+        <h2 className="text-center dark:text-white-2 text-[1.75rem] sm:text-3xl md:text-4xl lg:lg:text-[2.50rem] xl:text-5xl">
           Frequently Asked Questions
         </h2>
         <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-8">
           <div className="w-full lg:w-1/2 flex flex-col gap-5">
             {DATA_LEFT_FAQ.map((item) => (
-              <div key={item.id} className="bg-white-1 rounded-2xl">
+              <div
+                key={item.id}
+                className="bg-white-1 dark:bg-dark-blue-2 rounded-2xl"
+              >
                 <div
                   className="flex justify-between items-center gap-x-2.5 md:gap-x-0 p-5 cursor-pointer"
                   onClick={() => toggleAccordionLeft(item.id)}
                 >
-                  <h3 className="text-blue-3 text-lg md:text-xl font-semibold">
+                  <h3 className="text-blue-3 dark:text-white-2 text-lg md:text-xl font-semibold">
                     {item.question}
                   </h3>
                   {openIdLeft === item.id ? (
@@ -59,9 +62,11 @@ export default function FAQ() {
                 </div>
                 {openIdLeft === item.id && (
                   <div className="flex flex-col gap-y-5 px-5 pb-5">
-                    <p className="text-gray-2">{item.answer}</p>
+                    <p className="text-gray-2 dark:text-gray-1">
+                      {item.answer}
+                    </p>
                     <Link to={"/"} className="w-fit">
-                      <button className="text-blue-2 text-base font-semibold bg-transparent bg-white-1 rounded-full transition-all duration-300 group-hover:text-white-1">
+                      <button className="text-blue-2 dark:text-white-2 text-base font-semibold bg-transparent rounded-full transition-all duration-300">
                         Learn More
                       </button>
                     </Link>
@@ -72,12 +77,15 @@ export default function FAQ() {
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-5">
             {DATA_RIGHT_FAQ.map((item) => (
-              <div key={item.id} className="bg-white-1 rounded-2xl">
+              <div
+                key={item.id}
+                className="bg-white-1 rounded-2xl dark:bg-dark-blue-2"
+              >
                 <div
                   className="flex justify-between items-center gap-x-2.5 md:gap-x-0 p-5 cursor-pointer"
                   onClick={() => toggleAccordionRight(item.id)}
                 >
-                  <h3 className="text-blue-3 text-lg md:text-xl font-semibold">
+                  <h3 className="text-blue-3 dark:text-white-2 text-lg md:text-xl font-semibold">
                     {item.question}
                   </h3>
                   {openIdRight === item.id ? (
@@ -104,9 +112,11 @@ export default function FAQ() {
                 </div>
                 {openIdRight === item.id && (
                   <div className="flex flex-col gap-y-5 px-5 pb-5">
-                    <p className="text-gray-2">{item.answer}</p>
+                    <p className="text-gray-2 dark:text-gray-1">
+                      {item.answer}
+                    </p>
                     <Link to={"/"} className="w-fit">
-                      <button className="text-blue-2 text-base font-semibold bg-transparent bg-white-1 rounded-full transition-all duration-300 group-hover:text-white-1">
+                      <button className="text-blue-2 dark:text-white-2 text-base font-semibold bg-transparent rounded-full transition-all duration-300 group-hover:text-white-1">
                         Learn More
                       </button>
                     </Link>
@@ -114,7 +124,7 @@ export default function FAQ() {
                 )}
               </div>
             ))}
-            <div className="bg-blue-3 rounded-2xl">
+            <div className="bg-blue-3 dark:bg-dark-blue-2 rounded-2xl">
               <Link
                 to={"mailto:weserve@gmail.com"}
                 className="flex justify-between items-center p-5 cursor-pointer"
@@ -136,7 +146,7 @@ export default function FAQ() {
                     width={18}
                     height={18}
                     alt="icon Arrow Left"
-                    className="-rotate-90"
+                    className="-rotate-90 max-w-fit"
                   />
                 </div>
               </Link>
