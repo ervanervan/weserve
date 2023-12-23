@@ -12,7 +12,7 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <section className="py-8 md:py-0">
+    <section className="dark:bg-blue-3 py-8 md:py-0">
       <div className="flex flex-col gap-y-16 lg:flex-row items-center justify-between">
         <div className="flex flex-col gap-y-10">
           <div className="bg-white-1 w-fit flex items-center gap-x-2 px-4 py-2 rounded-full">

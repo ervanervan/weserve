@@ -5,6 +5,8 @@ import { Menu, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   ChevronDownIcon,
+  MoonIcon,
+  SunIcon,
   XMarkIcon,
 } from "@heroicons/react/20/solid";
 
@@ -22,12 +24,13 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
     <header
       className={`mt-3 py-8 sm:mb-8 md:mb-[4.25rem] sticky top-0 z-[20] ${
-        open ? "bg-white-2 shadow-md" : "bg-white/10 backdrop-blur-xl"
+        isOpen ? "bg-white-2 shadow-md" : "bg-white/10 backdrop-blur-xl"
       }`}
     >
       <nav className="flex items-center justify-between max-width">
@@ -176,6 +179,16 @@ export default function Navbar() {
           </li>
         </ul>
         <div className="lg:flex lg:items-center lg:gap-3 absolute lg:static hidden">
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            className="group bg-white-1 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
+          >
+            {isDarkMode ? (
+              <MoonIcon className="w-6 h-6 text-blue-3 transition-all" />
+            ) : (
+              <SunIcon className="w-6 h-6 text-blue-3 transition-all" />
+            )}
+          </button>
           <Link
             to={"/"}
             className="bg-white-1 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
@@ -187,7 +200,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div
-          onClick={() => setOpen(!open)}
+          onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden cursor-pointer"
         >
           {open ? (
