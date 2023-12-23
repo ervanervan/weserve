@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
@@ -18,6 +18,7 @@ import icon4 from "../assets/icon-driver-refresh.svg";
 import icon1 from "../assets/icon-hierarchy-square.svg";
 
 import Button from "./Button";
+import useTheme from "../UseTheme";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -25,28 +26,36 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   return (
     <header
-      className={`mt-3 py-8 sm:mb-8 md:mb-[4.25rem] sticky top-0 z-[20] ${
-        isOpen ? "bg-white-2 shadow-md" : "bg-white/10 backdrop-blur-xl"
+      className={`py-8 sm:mb-8 md:mb-[4.25rem] transition-all ease-in duration-500 sticky top-0 z-[20] ${
+        isOpen
+          ? "bg-white-2 dark:bg-dark-blue-1 shadow-md"
+          : "bg-white/10 dark:bg-dark-blue-1 backdrop-blur-xl"
       }`}
     >
       <nav className="flex items-center justify-between max-width">
         <Link to={"/"} className="flex items-center gap-2">
           <img src={logo} alt="logo" width={40} height={40} />
-          <h1 className="text-3xl">weserve.</h1>
+          <h1 className="text-3xl dark:text-white-1">weserve.</h1>
         </Link>
         <ul
           className={`lg:flex lg:gap-8 absolute divide-y lg:divide-none top-[6.50rem] lg:static z-[-10] bg-white-2 shadow-md lg:shadow-none lg:bg-transparent lg:z-auto left-0 w-full lg:w-auto lg:px-0 sm:px-16 px-6 lg:py-0 py-3 transition-all duration-300 ease-in ${
-            open ? "top-20 opacity-100" : "-top-[26rem] hidden"
+            isOpen
+              ? "top-20 opacity-100 dark:bg-dark-blue-1"
+              : "-top-[26rem] hidden"
           } opacity-0 lg:opacity-100`}
         >
           <li className="py-4 lg:py-0">
             <Link
               to={"/products"}
-              className="text-blue-3 hover:text-blue-3-hover transition-all"
+              className="text-blue-3 dark:text-white-2 hover:text-blue-3-hover transition-all"
             >
               Products
             </Link>
@@ -55,10 +64,10 @@ export default function Navbar() {
             <Menu as="div" className="relative inline-block text-left">
               <div className="group">
                 <Link to={"/services"}>
-                  <Menu.Button className="text-blue-3 group-hover:text-blue-3-hover transition-all inline-flex items-center w-full justify-center gap-x-1.5">
+                  <Menu.Button className="text-blue-3 dark:text-white-2 group-hover:text-blue-3-hover transition-all inline-flex items-center w-full justify-center gap-x-1.5">
                     Services
                     <ChevronDownIcon
-                      className="-mr-1 h-5 w-5 text-blue-3 group-hover:text-blue-3-hover transition-all"
+                      className="-mr-1 h-5 w-5 text-blue-3 dark:text-white-2 group-hover:text-blue-3-hover transition-all"
                       aria-hidden="true"
                     />
                   </Menu.Button>
@@ -156,7 +165,7 @@ export default function Navbar() {
           <li className="py-4 lg:py-0">
             <Link
               to={"/pricing"}
-              className="text-blue-3 hover:text-blue-3-hover transition-all"
+              className="text-blue-3 dark:text-white-2 hover:text-blue-3-hover transition-all"
             >
               Pricing
             </Link>
@@ -164,7 +173,7 @@ export default function Navbar() {
           <li className="py-4 lg:py-0">
             <Link
               to={"/testimonials"}
-              className="text-blue-3 hover:text-blue-3-hover transition-all"
+              className="text-blue-3 dark:text-white-2 hover:text-blue-3-hover transition-all"
             >
               Testimonials
             </Link>
@@ -172,7 +181,7 @@ export default function Navbar() {
           <li className="py-4 lg:py-0">
             <Link
               to={"/blog"}
-              className="text-blue-3 hover:text-blue-3-hover transition-all"
+              className="text-blue-3 dark:text-white-2 hover:text-blue-3-hover transition-all"
             >
               Blog
             </Link>
@@ -180,13 +189,13 @@ export default function Navbar() {
         </ul>
         <div className="lg:flex lg:items-center lg:gap-3 absolute lg:static hidden">
           <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className="group bg-white-1 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
+            className="group bg-white-1 dark:bg-dark-blue-2 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
+            onClick={handleThemeSwitch}
           >
-            {isDarkMode ? (
-              <MoonIcon className="w-6 h-6 text-blue-3 transition-all" />
+            {theme === "dark" ? (
+              <SunIcon className="w-6 h-6 text-blue-3 dark:text-white-1 transition-all transforms duration-300 rotate-90" />
             ) : (
-              <SunIcon className="w-6 h-6 text-blue-3 transition-all" />
+              <MoonIcon className="w-6 h-6 scale-100 rotate-100 text-blue-3 transition-all" />
             )}
           </button>
           <Link
@@ -203,10 +212,10 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden cursor-pointer"
         >
-          {open ? (
-            <XMarkIcon className="w-7 h-7 text-blue-3 hover:text-blue-3-hover transition-all" />
+          {isOpen ? (
+            <XMarkIcon className="w-7 h-7 text-blue-3 dark:text-white-2 hover:text-blue-3-hover transition-all" />
           ) : (
-            <Bars3Icon className="w-7 h-7 text-blue-3 hover:text-blue-3-hover transition-all" />
+            <Bars3Icon className="w-7 h-7 text-blue-3 dark:text-white-2 hover:text-blue-3-hover transition-all" />
           )}
         </div>
       </nav>

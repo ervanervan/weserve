@@ -12,25 +12,25 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <section className="dark:bg-blue-3 py-8 md:py-0">
+    <section className="py-8 md:py-0">
       <div className="flex flex-col gap-y-16 lg:flex-row items-center justify-between">
         <div className="flex flex-col gap-y-10">
-          <div className="bg-white-1 w-fit flex items-center gap-x-2 px-4 py-2 rounded-full">
+          <div className="bg-white-1 dark:bg-dark-blue-2 w-fit flex items-center gap-x-2 px-4 py-2 rounded-full">
             <img
               src={iconGlobalSolid}
               alt="icon global"
               width={24}
               height={24}
             />
-            <p className="text-blue-3 font-semibold">
+            <p className="text-blue-3 dark:text-white-2 font-semibold">
               We host more than 120,000 websites
             </p>
           </div>
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl mb-3">
+            <h1 className="text-4xl dark:text-white-2 sm:text-5xl md:text-6xl xl:text-7xl mb-3">
               Grow Online <br /> Business Faster.
             </h1>
-            <p>
+            <p className="dark:text-gray-2">
               We provide a variety of servers to grow your users
               <br className="hidden sm:block" />
               acquisition much user-friendly and boosting up sales.

@@ -9,7 +9,7 @@ import { FOOTER_LINKS } from "../Data";
 
 export default function Footer() {
   return (
-    <footer className="py-8 md:pb-6 -mt-[32rem] md:-mt-[28rem] lg:-mt-[23rem] xl:-mt-[17.50rem] bg-blue-1">
+    <footer className="py-8 md:pb-6 -mt-[32rem] md:-mt-[28rem] lg:-mt-[23rem] xl:-mt-[17.50rem] bg-blue-1 dark:bg-dark-blue-2">
       <div className="max-width pt-[32rem] md:pt-[29rem] lg:pt-[24rem] xl:pt-[19rem] pb-6 flex flex-col lg:flex-row gap-y-16 items-start justify-between">
         <div className="flex flex-col gap-y-8">
           <Link to={"/"} className="flex items-center gap-2">

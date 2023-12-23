@@ -12,7 +12,7 @@ import OurEcosystem from "../components/OurEcosystem";
 const Homepage = () => {
   return (
     <>
-      <main>
+      <main className="dark:bg-dark-blue-1">
         <Navbar />
         <section className="max-width">
           <Hero />

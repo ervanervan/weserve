@@ -17,7 +17,7 @@ export default function Button(props) {
       }
       ${
         props.isBlue &&
-        "px-7 py-3 text-white-1 text-base font-semibold bg-blue-3 hover:bg-blue-3-hover"
+        "px-7 py-3 text-white-1 text-base font-semibold bg-blue-3 dark:bg-dark-blue-2 hover:bg-blue-3-hover"
       }
       ${
         props.isYellow &&

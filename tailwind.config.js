@@ -20,6 +20,8 @@ export default {
         'gray-2': "#5D5D7C",
         'yellow': "#FFD15A",
         'yellow-hover': "#FFC633",
+        'dark-blue-1': "#03051B",
+        'dark-blue-2': "#111428",
       },
 
       fontFamily: {
