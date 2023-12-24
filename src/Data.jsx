@@ -37,6 +37,10 @@ import Brand3 from "./components/icon/Brand3";
 import Brand2 from "./components/icon/Brand2";
 import Brand4 from "./components/icon/Brand4";
 import Brand5 from "./components/icon/Brand5";
+import DriverRefreshIcon from "./components/icon/DriverRefreshIcon";
+import StatusUpIcon from "./components/icon/StatusUpIcon";
+import Cube3dIcon from "./components/icon/Cube3dIcon";
+import HierarchySquareIcon from "./components/icon/HierarchySquareIcon";
 
 export const DATA_BRANDS = [
   {
@@ -69,32 +73,32 @@ export const DATA_BRANDS = [
 export const DATA_FEATURED = [
   {
     id: 1,
-    icon: iconHierarchySquare,
-    iconHover: iconHierarchySquareWhite,
+    icon: <HierarchySquareIcon />,
+    // iconHover: iconHierarchySquareWhite,
     iconName: "Hierarchy Square",
     title: "Extra Layers",
     description: "Making your project more secure avoiding DDoS",
   },
   {
     id: 2,
-    icon: icon3dCube,
-    iconHover: icon3dCubeWhite,
+    icon: <Cube3dIcon />,
+    // iconHover: icon3dCubeWhite,
     iconName: "3d Cube",
     title: "Customizable",
     description: "Only install what your business needs to grow",
   },
   {
     id: 3,
-    icon: iconStatusUp,
-    iconHover: iconStatusUpWhite,
+    icon: <StatusUpIcon />,
+    // iconHover: iconStatusUpWhite,
     iconName: "Status Up",
     title: "AI Automation",
     description: "Decide the business flow based on latest reports",
   },
   {
     id: 4,
-    icon: iconDriverRefresh,
-    iconHover: iconDriverRefreshWhite,
+    icon: <DriverRefreshIcon />,
+    // iconHover: iconDriverRefreshWhite,
     iconName: "Driver Refresh",
     title: "Auto-Scaling",
     description: "Have a long weekend without worrying any loss",

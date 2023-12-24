@@ -2,13 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import shadow from "../assets/shadow.svg";
 
-export default function CardFeatured({
-  icon,
-  iconHover,
-  iconName,
-  title,
-  description,
-}) {
+export default function CardFeatured({ icon, title, description }) {
   // const [isHovered, setIsHovered] = useState(false);
 
   // const handleMouseEnter = () => {
@@ -33,6 +27,8 @@ export default function CardFeatured({
             width={46}
             height={46}
           /> */}
+
+          {/* ICON HOVER
           <img
             src={icon}
             alt={iconName}
@@ -46,7 +42,10 @@ export default function CardFeatured({
             width={46}
             height={46}
             className="hidden transition group-hover:block"
-          />
+          /> */}
+
+          <div>{icon}</div>
+
           <div>
             <h3 className="text-blue-3 dark:text-white-2 font-bold text-xl group-hover:text-white-1 mb-1">
               {title}
