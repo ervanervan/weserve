@@ -19,7 +19,7 @@ export default function GetStarted() {
               width={24}
               height={24}
             />
-            <p className="text-blue-3 font-semibold">
+            <p className="text-blue-3 text-xs md:text-sm font-semibold">
               We host more than 120,000 websites
             </p>
           </div>
