@@ -10,6 +10,10 @@ import ulistrationHero from "../assets/ulistration-hero.png";
 import Button from "./Button";
 import GlobalIcon from "./icon/GlobalIcon";
 import DeviceMessageIcon from "./icon/DeviceMessageIcon";
+import CloudAddIcon from "./icon/CloudAddIcon";
+import CloudAddIconMD from "./icon/CloudAddIconMD";
+import StatusUpIcon from "./icon/StatusUpIcon";
+import StatusUpIconMD from "./icon/StatusUpIconMD";
 
 export default function Hero() {
   return (
@@ -52,19 +56,20 @@ export default function Hero() {
             height={500}
             className="w-[25rem]"
           />
-          <div className="absolute top-0 left-0 flex gap-x-2.5 md:gap-x-5 bg-white-1 p-4 sm:p-5 items-center rounded-3xl">
-            <img
+          <div className="absolute top-0 left-0 flex gap-x-2.5 md:gap-x-5 bg-white-1 dark:bg-dark-blue-2 p-4 sm:p-5 items-center rounded-3xl">
+            {/* <img
               src={iconCloudAdd}
               alt="icon cloud-add"
               width={46}
               height={46}
               className="w-7 h-7 md:w-11 md:h-11"
-            />
+            /> */}
+            <CloudAddIconMD />
             <div className="flex flex-col gap-y-1 mr-3.5">
-              <span className="text-blue-3 text-base sm:text-lg md:text-xl font-bold">
+              <span className="text-blue-3 dark:text-white-2 text-base sm:text-lg md:text-xl font-bold">
                 Super Reliable
               </span>
-              <span className="text-gray-2 text-xs sm:text-sm md:text-base">
+              <span className="text-gray-2 dark:text-gray-1 text-xs sm:text-sm md:text-base">
                 24/7 Always Active
               </span>
             </div>
@@ -78,19 +83,20 @@ export default function Hero() {
               className="w-7 h-7 md:w-11 md:h-11"
             />
           </div>
-          <div className="absolute bottom-7 right-0 bg-white-1 p-4 sm:p-5 rounded-3xl flex flex-col items-center gap-y-4 sm:gap-y-6">
-            <img
+          <div className="absolute bottom-7 right-0 bg-white-1 dark:bg-dark-blue-2 p-4 sm:p-5 rounded-3xl flex flex-col items-center gap-y-4 sm:gap-y-6">
+            {/* <img
               src={iconStatusUp}
               alt="icon global"
               width={46}
               height={46}
               className="w-7 h-7 md:w-11 md:h-11"
-            />
+            /> */}
+            <StatusUpIconMD />
             <div className="flex flex-col items-center">
-              <span className="text-blue-3 font-bold text-xl sm:text-2xl md:text-3xl mb-0.5">
+              <span className="text-blue-3 dark:text-white-2 font-bold text-xl sm:text-2xl md:text-3xl mb-0.5">
                 +490%
               </span>
-              <span className="text-gray-2 text-xs sm:text-sm md:text-base">
+              <span className="text-gray-2 dark:text-gray-1 text-xs sm:text-sm md:text-base">
                 Engagements
               </span>
             </div>

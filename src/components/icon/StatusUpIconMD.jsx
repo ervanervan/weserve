@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function StatusUpIcon() {
+export default function StatusUpIconMD() {
   return (
     <svg
       width="47"
@@ -8,6 +8,7 @@ export default function StatusUpIcon() {
       viewBox="0 0 47 46"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-7 h-7 md:w-11 md:h-11"
     >
       <rect x="1" y="0.5" width="45" height="45" stroke="" />
       <path

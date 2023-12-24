@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CloudAddIcon() {
+export default function CloudAddIconMD() {
   return (
     <svg
       width="47"
@@ -8,6 +8,7 @@ export default function CloudAddIcon() {
       viewBox="0 0 47 46"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-7 h-7 md:w-11 md:h-11"
     >
       <path
         d="M11.1183 21.3132C2.14827 21.9457 2.14827 34.9982 11.1183 35.6307H14.7984"

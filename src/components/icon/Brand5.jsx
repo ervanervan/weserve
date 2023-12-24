@@ -9,7 +9,7 @@ export default function Brand5() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1_421)">
+      <g clipPath="url(#clip0_1_421)">
         <path
           d="M43.2377 23.3339H53.1491V20.3486H46.7604V9.1037H43.2377V23.3339Z"
           className="fill-blue-3 dark:fill-gray-1"
@@ -47,8 +47,8 @@ export default function Brand5() {
           className="fill-blue-3 dark:fill-gray-1"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M17.3844 33.2852C26.5443 33.2852 33.9698 25.8597 33.9698 16.6998C33.9698 7.54 26.5443 0.114471 17.3844 0.114471C8.22455 0.114471 0.799042 7.54 0.799042 16.6998C0.799042 25.8597 8.22455 33.2852 17.3844 33.2852ZM22.5585 7.84063C22.8103 6.94602 21.9422 6.41702 21.1493 6.98189L10.0811 14.8668C9.22127 15.4794 9.35653 16.6998 10.2843 16.6998H13.1989V16.6773H18.8792L14.2508 18.3103L12.2104 25.5591C11.9585 26.4537 12.8266 26.9827 13.6195 26.4178L24.6877 18.5329C25.5476 17.9203 25.4122 16.6998 24.4845 16.6998H20.0647L22.5585 7.84063Z"
           className="fill-blue-3 dark:fill-gray-1"
         />
