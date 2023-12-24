@@ -16,7 +16,9 @@ const Homepage = () => {
         <Navbar />
         <section className="max-width">
           <Hero />
-          <Brands />
+        </section>
+        <Brands />
+        <section className="max-width">
           <Featured />
           <OurEcosystem />
         </section>

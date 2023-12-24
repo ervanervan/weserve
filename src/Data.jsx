@@ -13,9 +13,7 @@ import iconDriverRefreshWhite from "./assets/icon-driver-refresh-white.svg";
 import iconHierarchySquare from "./assets/icon-hierarchy-square.svg";
 import iconHierarchySquareWhite from "./assets/icon-hierarchy-square-white.svg";
 
-import iconHealth from "./assets/icon-health.svg";
 import iconCpuCharge from "./assets/icon-cpu-charge.svg";
-import conCloudAdd from "./assets/icon-cloud-add.svg";
 
 import imgShowcase1 from "./assets/image-showcase-1.png";
 import imgShowcase2 from "./assets/image-showcase-2.png";
@@ -34,37 +32,37 @@ import iconCrownWhite from "./assets/icon-crown-white.svg";
 import HealthIcon from "./components/icon/HealthIcon";
 import CpuChargeIcon from "./components/icon/CpuChargeIcon";
 import CloudAddIcon from "./components/icon/CloudAddIcon";
+import Brand1 from "./components/icon/Brand1";
+import Brand3 from "./components/icon/Brand3";
+import Brand2 from "./components/icon/Brand2";
+import Brand4 from "./components/icon/Brand4";
+import Brand5 from "./components/icon/Brand5";
 
 export const DATA_BRANDS = [
   {
     id: 1,
     name: "Brand 1",
-    imgURL: imgBrand1,
-    width: 141,
+    imgURL: <Brand1 />,
   },
   {
     id: 2,
     name: "Brand 2",
-    imgURL: imgBrand2,
-    width: 141,
+    imgURL: <Brand2 />,
   },
   {
     id: 3,
     name: "Brand 3",
-    imgURL: imgBrand3,
-    width: 141,
+    imgURL: <Brand3 />,
   },
   {
     id: 4,
     name: "Brand 4",
-    imgURL: imgBrand4,
-    width: 141,
+    imgURL: <Brand4 />,
   },
   {
     id: 5,
     name: "Brand 5",
-    imgURL: imgBrand5,
-    width: 141,
+    imgURL: <Brand5 />,
   },
 ];
 
