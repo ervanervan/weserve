@@ -11,6 +11,8 @@ import iconDeviceMessage from "../assets/icon-device-message.svg";
 import iconMessageProgramming from "../assets/icon-message-programming.svg";
 import ulistrationEcosystem from "../assets/ulistration-ecosystem.png";
 import DeviceMessageIcon from "./icon/DeviceMessageIcon";
+import StatusUpIconMD from "./icon/StatusUpIconMD";
+import MessageProgrammingIcon from "./icon/MessageProgrammingIcon";
 
 export default function OurEcosystem() {
   return (
@@ -23,17 +25,18 @@ export default function OurEcosystem() {
             width={400}
             height={500}
           />
-          <div className="absolute top-24 md:top-32 left-0 bg-white-1 p-5 rounded-3xl">
+          <div className="absolute top-24 md:top-32 left-0 bg-white-1 dark:bg-dark-blue-2 p-5 rounded-3xl">
             <div className="flex flex-col items-center gap-y-3 sm:gap-y-5">
-              <img
+              {/* <img
                 src={iconStatusUp}
                 alt="icon Status Up"
                 width={46}
                 height={46}
                 className="w-7 h-7 md:w-11 md:h-11"
-              />
+              /> */}
+              <StatusUpIconMD />
               <div className="flex items-center flex-col mb-2">
-                <span className="text-blue-3 text-sm sm:text-base lg:text-lg font-bold mb-0.5">
+                <span className="text-blue-3 dark:text-white-2 text-sm sm:text-base lg:text-lg font-bold mb-0.5">
                   5/5 Growth
                 </span>
                 <div className="flex gap-x-0.5 items-center">
@@ -85,19 +88,20 @@ export default function OurEcosystem() {
               className="w-7 h-7 md:w-11 md:h-11"
             />
           </div>
-          <div className="absolute bottom-10 right-0 flex gap-x-2.5 md:gap-x-5 bg-white-1 p-4 sm:p-5 items-center rounded-3xl">
-            <img
+          <div className="absolute bottom-10 right-0 flex gap-x-2.5 md:gap-x-5 bg-white-1 dark:bg-dark-blue-2 p-4 sm:p-5 items-center rounded-3xl">
+            {/* <img
               src={iconMessageProgramming}
               alt="icon Message Programming"
               width={46}
               height={46}
               className="w-7 h-7 md:w-11 md:h-11"
-            />
+            /> */}
+            <MessageProgrammingIcon />
             <div className="flex flex-col gap-y-1 mr-3.5">
-              <span className="text-blue-3 text-base sm:text-lg md:text-xl font-bold">
+              <span className="text-blue-3 dark:text-white-2 text-base sm:text-lg md:text-xl font-bold">
                 AI Automation
               </span>
-              <span className="text-gray-2 text-xs sm:text-sm md:text-base">
+              <span className="text-gray-2 dark:text-gray-1 text-xs sm:text-sm md:text-base">
                 Working Faster
               </span>
             </div>
