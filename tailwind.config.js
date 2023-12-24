@@ -22,6 +22,8 @@ export default {
         'yellow-hover': "#FFC633",
         'dark-blue-1': "#03051B",
         'dark-blue-2': "#111428",
+        'dark': "#424560",
+        'dark-white': "#ACB0D7",
       },
 
       fontFamily: {

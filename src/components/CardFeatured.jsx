@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import shadow from "../assets/shadow.svg";
+import Shadow from "./icon/Shadow";
 
 export default function CardFeatured({ icon, title, description }) {
   // const [isHovered, setIsHovered] = useState(false);
@@ -59,12 +60,13 @@ export default function CardFeatured({ icon, title, description }) {
               Learn More
             </button>
           </Link>
-          <img
+          {/* <img
             src={shadow}
             alt="shadow"
             draggable={false}
             className="hidden absolute top-0 right-2 group-hover:block"
-          />
+          /> */}
+          <Shadow />
         </div>
       </div>
     </div>
