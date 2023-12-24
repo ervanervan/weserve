@@ -83,7 +83,7 @@ export default function Navbar() {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="absolute left-0 z-10 mt-3 lg:mt-11 w-56 origin-top-right rounded-md bg-white/10 backdrop-blur-xl shadow-md focus:outline-none">
+                <Menu.Items className="absolute left-0 z-10 mt-3 lg:mt-11 w-56 origin-top-right rounded-md bg-white/10 dark:bg-dark-blue-2 backdrop-blur-xl shadow-md focus:outline-none">
                   <div className="py-2 mx-1">
                     <Menu.Item>
                       {({ active }) => (
@@ -98,7 +98,9 @@ export default function Navbar() {
                         >
                           <div className="flex gap-2 items-center">
                             <img src={icon1} alt="" width={20} height={20} />
-                            <span>Extra Layers</span>
+                            <span className="dark:text-white-2">
+                              Extra Layers
+                            </span>
                           </div>
                         </a>
                       )}
@@ -116,7 +118,9 @@ export default function Navbar() {
                         >
                           <div className="flex gap-2 items-center">
                             <img src={icon2} alt="" width={20} height={20} />
-                            <span>Customizable</span>
+                            <span className="dark:text-white-2">
+                              Customizable
+                            </span>
                           </div>
                         </a>
                       )}
@@ -134,7 +138,9 @@ export default function Navbar() {
                         >
                           <div className="flex gap-2 items-center">
                             <img src={icon3} alt="" width={20} height={20} />
-                            <span>AI Automation</span>
+                            <span className="dark:text-white-2">
+                              AI Automation
+                            </span>
                           </div>
                         </a>
                       )}
@@ -152,7 +158,9 @@ export default function Navbar() {
                         >
                           <div className="flex gap-2 items-center">
                             <img src={icon4} alt="" width={20} height={20} />
-                            <span>Auto-Scaling</span>
+                            <span className="dark:text-white-2">
+                              Auto-Scaling
+                            </span>
                           </div>
                         </a>
                       )}
@@ -186,6 +194,30 @@ export default function Navbar() {
               Blog
             </Link>
           </li>
+
+          <div className="lg:hidden">
+            <div className="flex items-center flex-wrap gap-3 py-4">
+              <button
+                className="group bg-white-1 dark:bg-dark-blue-2 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
+                onClick={handleThemeSwitch}
+              >
+                {theme === "dark" ? (
+                  <SunIcon className="w-6 h-6 text-blue-3 dark:text-white-1 transition-all transforms duration-300 rotate-90" />
+                ) : (
+                  <MoonIcon className="w-6 h-6 scale-100 rotate-100 text-blue-3 transition-all" />
+                )}
+              </button>
+              <Link
+                to={"/"}
+                className="bg-white-1 dark:bg-dark-blue-2 rounded-full inline-block p-3 hover:bg-white-1-hover transition-all duration-300"
+              >
+                <Bag2Icon />
+              </Link>
+              <Link to={"/"} className="flex flex-col">
+                <Button isBlue>Sign In</Button>
+              </Link>
+            </div>
+          </div>
         </ul>
         <div className="lg:flex lg:items-center lg:gap-3 absolute lg:static hidden">
           <button
