@@ -1,7 +1,9 @@
 import React from "react";
-import { DATA_OURSHOWCASE } from "../Data";
-import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import { DATA_OURSHOWCASE } from "../Data";
+
+import Marquee from "react-fast-marquee";
+
 import Button from "./Button";
 
 export default function OurShowcase() {
