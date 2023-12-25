@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import shadow from "../assets/shadow.svg";
 import Shadow from "./icon/Shadow";
 
 export default function CardFeatured({ icon, title, description }) {
