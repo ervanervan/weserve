@@ -27,7 +27,7 @@ export default function GetStarted() {
             <h2 className="text-white-1 text-[1.75rem] sm:text-3xl md:text-4xl lg:lg:text-[2.50rem] xl:text-5xl mb-3">
               Start Growing Today
             </h2>
-            <p className="text-white-1">
+            <p className="text-white-2">
               We provide a variety of servers to grow your users
               <br className="hidden sm:block" />
               acquisition much user-friendly and boosting up sales.
