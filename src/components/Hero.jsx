@@ -1,19 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import iconGlobalWhite from "../assets/icon-global-white.svg";
-import iconDeviceMessage from "../assets/icon-device-message.svg";
-import iconStatusUp from "../assets/icon-status-up.svg";
-import iconCloudAdd from "../assets/icon-cloud-add.svg";
-import ulistrationHero from "../assets/ulistration-hero.png";
-
 import Button from "./Button";
+
 import GlobalIcon from "./icon/GlobalIcon";
-import DeviceMessageIcon from "./icon/DeviceMessageIcon";
-import CloudAddIcon from "./icon/CloudAddIcon";
 import CloudAddIconMD from "./icon/CloudAddIconMD";
-import StatusUpIcon from "./icon/StatusUpIcon";
 import StatusUpIconMD from "./icon/StatusUpIconMD";
+import DeviceMessageIcon from "./icon/DeviceMessageIcon";
+import ulistrationHero from "../assets/ulistration-hero.png";
+import iconGlobalWhite from "../assets/icon-global-white.svg";
 
 export default function Hero() {
   return (
