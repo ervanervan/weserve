@@ -5,14 +5,11 @@ import Button from "./Button";
 import { DATA_OURECOSYSTEM } from "../Data";
 
 import iconStar from "../assets/icon-star.svg";
-import iconCrownWhite from "../assets/icon-crown-white.svg";
-import iconStatusUp from "../assets/icon-status-up.svg";
-import iconDeviceMessage from "../assets/icon-device-message.svg";
-import iconMessageProgramming from "../assets/icon-message-programming.svg";
-import ulistrationEcosystem from "../assets/ulistration-ecosystem.png";
-import DeviceMessageIcon from "./icon/DeviceMessageIcon";
 import StatusUpIconMD from "./icon/StatusUpIconMD";
+import DeviceMessageIcon from "./icon/DeviceMessageIcon";
+import iconCrownWhite from "../assets/icon-crown-white.svg";
 import MessageProgrammingIcon from "./icon/MessageProgrammingIcon";
+import ulistrationEcosystem from "../assets/ulistration-ecosystem.png";
 
 export default function OurEcosystem() {
   return (
