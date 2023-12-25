@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { DATA_GETSTARTED } from "../Data";
+
+import Button from "./Button";
+import CardGetStarted from "./CardGetStarted";
 
 import iconGlobalSolid from "../assets/icon-global-solid.svg";
 import iconDeviceMessageWhite from "../assets/icon-device-message-white.svg";
-import Button from "./Button";
-import { DATA_GETSTARTED } from "../Data";
-import CardGetStarted from "./CardGetStarted";
 
 export default function GetStarted() {
   return (
