@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
 import { FOOTER_LINKS } from "../Data";
+import { Link } from "react-router-dom";
+
 import SmsIcon from "./icon/SmsIcon";
-import Global2Icon from "./icon/Global2Icon";
+import logo from "../assets/logo.svg";
 import CallIcon from "./icon/CallIcon";
+import Global2Icon from "./icon/Global2Icon";
 import VideoPlayIcon from "./icon/VideoPlayIcon";
 
 export default function Footer() {
